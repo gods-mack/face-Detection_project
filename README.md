@@ -12,7 +12,7 @@ here, we implementing face detection application using Python OpenCV Library
 Use the package manager to install OpenCV.
 
 ```bash
-pip install foobar
+pip install cv2
 ``` 
 # OpenCV
   this is a Comptuer Vision Library.
