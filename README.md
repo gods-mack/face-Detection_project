@@ -1,16 +1,22 @@
-# get Started
-  To run this application run faceDetection.py file \n
-    to run
-  ```bash
-   python faceDetection.py
-   ```
 # face-Detection_project
 here we implementing face detection application using Python OpenCV Library
+# get Started
+  To run this application run faceDetection.py file
+  to run : 
+  ```python
+   python faceDetection.py
+   ```
+   
+ ## Installation
+
+Use the package manager to install OpenCV.
+
+```bash
+pip install foobar
+``` 
 # OpenCV
   this is a Comptuer Vision Library
-    to install OpenCV
-  ```bash
-pip install cv2
+   
 ```
 # faceDetection.py
   This is main file to run main Application
