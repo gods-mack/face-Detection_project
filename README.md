@@ -20,8 +20,9 @@ pip install foobar
 # faceDetection.py
   This is main file to run main Application
 # Requirement
-  OpenCV
-  Tkinter (for GUI)
+  1.OpenCV
+  
+  2. Tkinter (for GUI)
 # 'Data' Directory
   This directory contain xml file which contain haarcascade data to identify face organ
   
