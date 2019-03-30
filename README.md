@@ -1,5 +1,5 @@
 # face-Detection_project
-here we implementing face detection application using Python OpenCV Library
+here, we implementing face detection application using Python OpenCV Library
 # get Started
   To run this application run faceDetection.py file
   to run : 
@@ -15,9 +15,8 @@ Use the package manager to install OpenCV.
 pip install foobar
 ``` 
 # OpenCV
-  this is a Comptuer Vision Library
-   
-```
+  this is a Comptuer Vision Library.
+  
 # faceDetection.py
   This is main file to run main Application
 # Requirement
