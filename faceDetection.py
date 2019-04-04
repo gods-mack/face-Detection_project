@@ -12,9 +12,9 @@ img = []
 
 class eye:
 
-   	
+   """Here We Placed Button and read Instruction  label """
    def __init__(self,master):
-     frame  = Frame(master)
+     frame  = Frame(master)   # Top frame
      frame.pack()
      button1 = Button(frame,text="Upload",fg="white",bg="gray",width=7,height=2,command=self.upload).pack(side="left")
      button2 = Button(frame,text="Real Time",fg="white",bg="gray",width=7,height=2,command=self.realtime).pack(side="right")
@@ -32,11 +32,10 @@ class eye:
      dire3.pack()
      
      
-
-
-     #quit_button = Button(frame, text ="Quit",bg="Red",fg="green",command=frame.destroy).pack()
-   	 
-
+   """In Upload Function we will Upload an image from Our Computer 
+   Directory
+   and then convert original image in Gray Scale Image
+   apply haarcasCade Classifier in Gray Scale image to scan face part """
    def upload(self):
      imgTemp  = askopenfilename()
      img = cv.imread(imgTemp)
@@ -57,7 +56,7 @@ class eye:
      cv.imshow('img',img)
      cv.waitKey(0)
      cv.destroyAllWindow()  
- 
+  # Here we have have real time face detection Module
    def realtime(self):
      face_cascade = cv.CascadeClassifier('data/haarcascade_frontalface_default.xml')
      eye_cascade = cv.CascadeClassifier('data/haarcascade_eye.xml')
@@ -65,9 +64,9 @@ class eye:
 
 
      a = 1
-     """ check = bool data type return Trupe if Python
+     """ check , bool data type return True if Python
      able to read the videoCapture
-      frame = NUmpy array containf first image capture by object """
+      frame = it is NUmpy array containf first image capture by object """
      while True:
        a = a+1
        check,frame = video_capture.read() 
@@ -94,15 +93,10 @@ class eye:
 
 
     
-   
-    
-
-
-#button1 = Button(window,text="Upload",fg="black",bg="gray",command=obj.upload).pack()
-#button1 = Button(window,text="Upload",fg="black",bg="green",command=disp).pack()
+""" Quit Window """
 def quit(root): 	
  root.destroy() 
-root = Tk()
+root = Tk()  # Tkiniter Object(Window)
 root.title("FaceIt___")
 root.geometry("600x300")
 label1 = Label(root, 
@@ -113,6 +107,6 @@ label1 = Label(root,
 #label1 = Label(root,text="Face Detection Application ",width=67,height=13).pack()
 button2 = Button(root,text="Exit",fg="green",bg="red",command=lambda root=root:quit(root)).pack()
 root.configure(background="white")
-obj  = eye(root)
-#button1 = Button(root,text="Exit",fg="green",bg="red",command=lambda root=root:quit(root)).pack()
+obj  = eye(root)   # pass window object eye Class
+
 root.mainloop()
